@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, intial-scale=1.0">
+   <title>Sorting Visualizer</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   <header>
+      <nav  id="full">
+	    <div class="array-inputs">
+		   <p>Size of the array:</p>
+		   <input id="a_size" type="range" min=20 max=150 step=1 value=80 class="slider_a_size">
+		   <p>Speed of the algorithm:</p>
+		   <input id="a_speed" type="range" min=1 max=5 step=1 value=4 class="slider_speed">
+		   <button id="a_generate">Generate New Array!</button>
+		</div>
+		
+		<div class="header_right">
+		   <p class="nav-heading">Sorting visulizer</p>
+		   <div class="algos">
+		     <button>Bubble</button>
+			 <button>Selection</button>
+			 <button>Insertion</button>
+			 <button>Merge</button>
+			 <button>Quick</button>
+		     <button style="margin-right:0px;">Heap</button>
+		   </div>
+		</div>
+	  </nav>
+		
+   </header>
+   <section>
+   
+      <div id="Info_cont1">
+	     <p>This is First Container</p>
+	  </div>
+	  
+	  <div id="array_container">
+	  </div>
+	  <div id="Info_cont2">
+	     <p>This is second container</p>
+	  </div>
+   </section>
+   <div id="myModal" class="modal">
+	  <div class="modal-content">
+		<span class="close">&times;</span>
+		<p>This is Sorting Algorithm Visualizer<br><br>
+		   If you want better user experience switch to desktop or maximize window size   
+		</p>
+	  </div>
+  </div>
+   <footer>
+      <button id="myBtn">Open Modal</button>
+      <p id="auth_info">Author : RAHUL KUMAR</p>
+	  <p id="auth_email">Email: rahulkumar665550@gmail.com</p>
+   </footer>
+   <script>
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  if(detectMob())modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function detectMob() {
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+}
+</script>
+   <script src="./scripts/main.js"></script>
+   <script src="./scripts/visualizations.js"></script>
+   <script src="./scripts/bubble_sort.js"></script>
+   <script src="./scripts/selection_sort.js"></script>
+   <script src="./scripts/insertion_sort.js"></script>
+   <script src="./scripts/merge_sort.js"></script>
+   <script src="./scripts/quick_sort.js"></script>
+   <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

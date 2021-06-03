@@ -1,0 +1,196 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size; large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+nav {
+	background-color: rgb(10 11 210);
+	color: white;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 30% 60%;
+	grid-template-columns: 30% 60%;
+	-webkit-column-gap: 10%;
+	 column-gap: 10%;
+	padding: 0% 5%;
+	
+}
+.slider_a_size{
+	background-color:red;
+}
+nav .array-inputs{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 60% 40%;
+	grid-template-columns: 60% 40%;
+	place-content: center;
+	padding: 5% 0%;
+}
+
+nav .array-inputs #a_size{
+	padding: 5% 0%;
+	
+}
+
+nav .array-inputs #a_speed{
+	padding: 5% 0%;
+	
+}
+nav .array-inputs #a_generate{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 4% 0% 0% 0%;
+	padding-left: 20%;
+}
+nav .array-inputs #a_generate:hover{
+	cursor: pointer;
+}
+nav .header_right{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+nav .header_right .nav-heading{
+	display: inline-block;
+	font-size: xxx-large;
+	padding: 3% 0%;
+}
+
+nav .header_right .algos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16.66667%)[6];
+      grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: 20px;
+  border:0.1em solid rgb(10 11 210);
+}
+nav .header_right .algos button:hover{
+	background-color: blue;
+	cursor: pointer;
+	text-shadow: 0 0 2em rgba(255,255,255,1);
+	color:#FFFFFF;
+	border-color:#FFFFFF;
+}
+nav .header_right .algos .butt_locked{
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  cursor: pointer;
+  color:black;
+}
+nav .header_right .algos .butt_selected:hover {
+  background-color: blue;
+  cursor: pointer;
+  color:white;
+}
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+section{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 20% 60% 20%;
+	grid-template-columns: 20% 60% 20%;
+}
+
+section #Info_cont1{
+	padding: 20%;
+}
+
+section #array_container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 70vh;
+}
+section #Info_cont2{
+	padding: 20%;
+}
+
+.hide{
+	display: none;
+}
+
+footer{
+	background-color: blue;
+	color: white;
+	padding: 20px 10px 10px 10px
+}
+footer #auth_info{
+	margin: 10px;
+}
+
+footer #auth_email{
+	margin: 10px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
